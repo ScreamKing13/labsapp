@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CycledActivity">
+
+    <TextView
+        android:id="@+id/cycledTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Завдання"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cycledImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="166dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycledTextView"
+        app:srcCompat="@drawable/cycled" />
+
+    <Button
+        android:id="@+id/cycledCalcBtn"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:text="Обчислити"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycledImageView" />
+
+    <Button
+        android:id="@+id/cycledAlgBtn"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:text="Алгоритм"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycledImageView" />
+
+    <EditText
+        android:id="@+id/aArrayEditText"
+        android:layout_width="325dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:inputType="textLongMessage|numberSigned|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycledImageView" />
+
+    <EditText
+        android:id="@+id/bArrayEditText"
+        android:layout_width="325dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textLongMessage|numberSigned|numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aArrayEditText" />
+
+    <Button
+        android:id="@+id/cycledFileCalcBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Зчитати з файлу"
+        app:layout_constraintEnd_toStartOf="@+id/cycledFileSaveBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycledCalcBtn" />
+
+    <Button
+        android:id="@+id/cycledFileSaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="124dp"
+        android:text="Зберегти у файл"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cycledFileCalcBtn"
+        app:layout_constraintTop_toBottomOf="@+id/cycledAlgBtn" />
+
+    <TextView
+        android:id="@+id/cycledResultTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycledImageView"
+        app:layout_constraintVertical_bias="0.833" />
+
+    <TextView
+        android:id="@+id/aArrayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/cycledFileCalcBtn"
+        app:layout_constraintEnd_toStartOf="@+id/aArrayEditText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycledCalcBtn"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <TextView
+        android:id="@+id/bArrayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="b:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/cycledFileCalcBtn"
+        app:layout_constraintEnd_toStartOf="@+id/bArrayEditText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cycledCalcBtn"
+        app:layout_constraintVertical_bias="0.847" />
+
+</android.support.constraint.ConstraintLayout>

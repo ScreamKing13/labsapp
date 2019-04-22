@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">MyLabsApp</string>
+    <string name="action_settings">Student Info</string>
+    <string name="program_author">
+        "
+                        Автор
+        Тутевич Віталій Євгенійович
+        Група: ІО-71
+        Номер залікової книжки: 7124
+        "
+    </string>
+
+    <string-array name="labs">
+        <item>Лабораторна робота №1</item>
+        <item>Лабораторна робота №2</item>
+        <item>Лабораторна робота №3</item>
+        <item>Лабораторна робота №4</item>
+        <item>Лабораторна робота №5</item>
+    </string-array>
+
+    <string-array name="themes">
+        <item>"Поняття алгоритму"</item>
+        <item>"Обчислювальна складність алгоритмів сортування"</item>
+        <item>"Інтерполяція функцій"</item>
+        <item>"Розв&apos;язання нелінійних рівнянь на комп&apos;ютері"</item>
+        <item>"Розв&apos;язання систем лінійних алгебраїчних рівнянь"</item>
+    </string-array>
+
+    <string name="calc_time_header">Теоретичний та експериментальний графіки обчислювальної складності</string>
+</resources>
